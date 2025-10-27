@@ -1,0 +1,21 @@
+# Minimum expected edge (in % of stake) to alert (after fees). Example: 0.5 means 0.5% expected profit.
+min_edge_percent: 0.3
+
+# Estimated trading+withdrawal fees (in % of stake) per platform (conservative). Adjust to your account terms.
+fees_percent:
+  polymarket: 0.7
+  kalshi: 1.0
+  myriad: 1.0
+
+# Only include markets with at least this minimum liquidity (approximate) if available from the API
+min_liquidity_usd: 500
+
+# Polling period in seconds (if you run in daemon mode)
+poll_seconds: 60
+
+# How strict is title matching (0..100). 100 = only identical titles.
+# 80..92 is a good range; lower catches more with risk of false positives.
+title_similarity_threshold: 88
+
+# Markets to exclude by keyword (case-insensitive) to avoid tricky settlements (optional)
+exclude_keywords: ["fantasy", "play money", "test"]
